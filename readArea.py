@@ -24,7 +24,7 @@ def handle(text):
     return text.strip()
 
 
-def get_text():
+def readArea():
     with open('config.json', 'r') as file:
         config = json.load(file)
 
@@ -37,5 +37,5 @@ def get_text():
 
 
 if __name__ == "__main__":
-    text = get_text()
+    text = readArea()
     print(text)
