@@ -3,7 +3,6 @@ import pytesseract
 import mss
 import re
 import json
-import openai
 
 
 def perform_ocr(area, path):
