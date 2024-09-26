@@ -60,6 +60,7 @@ def setArea():
         'width': x2 - x1,
         'height': y2 - y1
     }
+    print(config['area'])
     
     with open('config.json', 'w') as file:
         json.dump(config, file, indent=4)
