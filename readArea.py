@@ -24,7 +24,7 @@ def handle(text):
     return text.strip()
 
 
-def getText():
+def get_text():
     with open('config.json', 'r') as file:
         config = json.load(file)
 
@@ -37,5 +37,5 @@ def getText():
 
 
 if __name__ == "__main__":
-    text = getText()
+    text = get_text()
     print(text)
