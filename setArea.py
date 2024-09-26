@@ -45,7 +45,7 @@ class ScreenCapture:
 
         return (x1, y1, x2, y2)
 
-def main():
+def setArea():
     # Start rectangle selection UI
     selector = ScreenCapture()
     x1, y1, x2, y2 = selector.get_rectangle()
@@ -68,4 +68,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    setArea()
