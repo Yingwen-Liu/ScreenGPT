@@ -31,11 +31,10 @@ def read_area():
     # Perform OCR on the defined area
     text = perform_ocr(config['area'], config['path'])
     handled_text = handle(text)
-    print(">> Text:\n", handled_text)
+    print(f">> Text:\n{handled_text}\n")
     
     return handled_text
 
 
 if __name__ == "__main__":
-    text = read_area()
-    print(text)
+    read_area()
