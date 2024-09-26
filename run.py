@@ -9,13 +9,13 @@ def save_clipboard():
     pyperclip.copy(text)
 
 # Printing instructions
-print("Press '1' to set area.\nPress '2' to save content to clipboard.\nPress 'esc' to exit.")
+print("Press 'up' to set area.\nPress 'down' to save content to clipboard.\nPress 'esc' to exit.")
     
-while True:
-    if keyboard.is_pressed('1'):
+while True: 
+    if keyboard.is_pressed('up'):
         set_area()
     
-    if keyboard.is_pressed('2'):
+    if keyboard.is_pressed('down'):
         save_clipboard()    
     
     if keyboard.is_pressed('esc'):
