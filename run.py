@@ -14,6 +14,7 @@ print("Press 'up' to set area.\nPress 'down' to save content to clipboard.\nPres
 while True: 
     if keyboard.is_pressed('up'):
         set_area()
+        save_clipboard() 
     
     if keyboard.is_pressed('down'):
         save_clipboard()    
